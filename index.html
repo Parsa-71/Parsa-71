@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Interactive Art</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #111;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .shape {
+            width: 100px;
+            height: 100px;
+            background-color: #333;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #shape1:hover {
+            transform: scale(1.2);
+            background-color: #ff6347; /* Tomato color */
+        }
+
+        #shape2:hover {
+            transform: rotate(45deg);
+            background-color: #8a2be2; /* Blue Violet color */
+        }
+
+        #shape3:hover {
+            transform: translateY(-20px);
+            background-color: #9932cc; /* Dark Orchid color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="shape" id="shape1"></div>
+        <div class="shape" id="shape2"></div>
+        <div class="shape" id="shape3"></div>
+    </div>
+</body>
+</html>
